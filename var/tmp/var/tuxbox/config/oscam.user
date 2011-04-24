@@ -1,0 +1,8 @@
+[account]
+User            = dummy
+Pwd             = dummy
+Group           = 1
+Caid            = 093b,0919,183D
+Ident           = 093b:000000;0919:000000;183D:005411
+Au              = SkyItalia
+monlevel        = 4

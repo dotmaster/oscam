@@ -1,0 +1,24 @@
+# in this file you can configure what CAIDs CCcam should prefer or ignore
+# defaults to /var/etc/CCcam.prio
+# file content can have ignores (I) and prio lists (P)
+#
+# situation 1: ignore allways this caid, all idents, on all channels
+# I: caid
+#
+# situation 2: ignore allways this caid/ident pair
+# I: caid:ident
+#
+# situation 3: ignore this caid/ident pair, on channel 'sid'
+# I: caid:ident:sid
+#
+# situation 4: when both caid1 and caid2 exist for a channel, prefer caid1 over caid2
+# P: caid1, caid2
+#
+# situation 5: when caid1:ident1 till caidN:identN exist for a channel, use them in order of this list.
+# P: caid1:ident1, caid2:ident2, .., caidN:identN
+#
+# situation 6: when caid1:ident1 till caidN:identN exist for channel 'sid', use them in order of this list.
+# Sid on first caid/ident pair identifies sid for which list is used. All other sids ignore this list.
+# P: caid1:ident1:sid, caid2:ident2, .., caidN:identN
+#
+#CAID PRIO FILE : /var/etc/CCcam.prio
